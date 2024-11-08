@@ -18,7 +18,7 @@ function makeFuse() {
     getWordlist().then(queryables => {
         fuse = new Fuse(queryables, {
             keys: ["title", "key", "enum"], 
-            treshold: 0.2, // TODO: experiment with threshold and distance values to get best results
+            threshold: 0.2, // TODO: experiment with threshold and distance values to get best results
             distance: 10,
             includeMatches: true
         });
