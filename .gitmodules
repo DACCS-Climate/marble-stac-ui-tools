@@ -1,0 +1,6 @@
+[submodule "plugins/leaflet-fusesearch"]
+	path = plugins/leaflet-fusesearch
+	url = https://github.com/naomap/leaflet-fusesearch
+[submodule "plugins/Leaflet.Editable"]
+	path = plugins/Leaflet.Editable
+	url = https://github.com/Leaflet/Leaflet.Editable.git

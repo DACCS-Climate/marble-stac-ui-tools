@@ -282,3 +282,7 @@
     border: none;
     box-shadow: var(--fusesearch-shadow);
 }
+
+.leaflet-fusesearch-panel {
+    width: 200px;
+}

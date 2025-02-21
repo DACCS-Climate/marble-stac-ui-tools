@@ -392,7 +392,7 @@ function createSearchTool(map){
         }
 
         //Leaflet-fuse-search plugin
-        searchControl = L.control.fuseSearch(options);
+        searchControl = L.control.fuseSearchExtended(options);
         searchControl.addTo(map);
 
         //Gets 'name' value from geojson and populates list used for search results

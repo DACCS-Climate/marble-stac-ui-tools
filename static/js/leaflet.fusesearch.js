@@ -1,0 +1,1 @@
+../../plugins/leaflet-fusesearch/src/leaflet.fusesearch.js

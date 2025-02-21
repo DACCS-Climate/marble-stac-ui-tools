@@ -1,0 +1,1 @@
+../../plugins/Leaflet.Editable/src/Leaflet.Editable.js

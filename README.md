@@ -10,24 +10,12 @@ Map UI added using Leaflet map that will allow an intuitive interface for the us
 - [LeafletJS](https://leafletjs.com/)
 
 ## Leaflet Plugins
-### Leaflet Fuse Search
-Adds a search box to the Leaflet map and uses Fuse.js fuzzy search to match entered terms to city names.
-- [Leaflet Fuse Search](https://github.com/naomap/leaflet-fusesearch)
 
-There is no CDN for this so the main files are copied directly into the project.
-
-To update this, get the latest files from the Leaflet Fuse Search GitHub and copy the `leaflet.fusesearch.js` 
-into the project's 'templates/site/js' directory. Copy the `leaflet.fusesearch.css` into the project's 'static/css' 
+Plugins that do not have a dedicated CDN are installed as 
+[submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) of this repository in the `plugins/`
 directory.
 
-### Leaflet Editable
-Allows the user to draw shapes onto the map by clicking and dragging.
-- [Leaflet Editable](https://github.com/Leaflet/Leaflet.Editable)
-
-There is no CDN for this so the main files are copied directly into the project.
-
-To update this, get the latest files from the Leaflet.Editable GitHub and copy the `Leaflet.Editable.js` 
-into the project's 'templates/site/js' directory.
+Relevant files from these plugins are then symlinked to the appropriate location in the `static/` directory.
 
 # Build the dictionary
 The STAC Search UI dictionary comes with a default dictionary of words and terms currently used in the STAC catalog. 
@@ -102,4 +90,3 @@ The affix file at least needs the encoding set for Typo.js to read it.  This is 
 The word list file starts with the number of words in the file, followed by a list of words separated by a newline character.
 
 [Hunspell dictionary file documentation](https://manpages.ubuntu.com/manpages/focal/man5/hunspell.5.html)
-
